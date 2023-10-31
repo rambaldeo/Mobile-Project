@@ -73,19 +73,20 @@
 
         <Button
             android:id="@+id/loginButton"
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_margin="5dp"
             android:onClick="this"
             android:text="Login"
             tools:ignore="onClick" />
 
         <Button
-            android:id="@+id/BackHome"
-            android:layout_width="120dp"
+            android:id="@+id/registerUser"
+            android:layout_width="150dp"
             android:layout_margin="5dp"
-            android:text="Cancel"
-
+            android:onClick="this"
+            tools:ignore="onClick"
+            android:text="Sign Up Now!"
             />
-
     </GridLayout>
+
 </FrameLayout>

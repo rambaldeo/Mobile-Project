@@ -60,7 +60,7 @@
                 android:id="@+id/signUpUsername"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Enter your username" />
+                android:hint="Enter your email" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,5 +79,31 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/backToLogin"
+            android:layout_width="150dp"
+            android:layout_margin="5dp"
+            android:onClick="this"
+            android:text="Back To Login"
+            tools:ignore="onClick" />
+
+        <Button
+            android:id="@+id/registerUserAccount"
+            android:layout_width="150dp"
+            android:layout_margin="5dp"
+            android:onClick="this"
+            tools:ignore="onClick"
+            android:text="Register"
+            />
+    </GridLayout>
+
 
 </FrameLayout>
