@@ -11,51 +11,53 @@
         android:id="@+id/welcomePage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="AutoGram"
         android:textAlignment="center"
-        android:textSize="35sp"
-        android:text="AutoGram" />
+        android:textSize="35sp" />
 
-
-
+    <ImageView
+        android:id="@+id/homePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/audi"
+        android:rotation="180"
+        />
 
 
     <LinearLayout
-        android:layout_width="match_parent"
         android:id="@+id/credentialContainer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="vertical"
         android:layout_gravity="center"
-        >
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/usernameInput"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@android:color/white"
-            >
+            android:background="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/username"
-                android:hint="Enter your username"/>
+                android:hint="Enter your username" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/passwordInput"
-            android:background="@android:color/white"
-            >
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/password"
-                android:hint="Description"
-                />
+                android:hint="Enter your password" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,19 +70,20 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:columnCount="2">
+
         <Button
             android:id="@+id/loginButton"
             android:layout_width="120dp"
+            android:layout_margin="5dp"
             android:onClick="this"
             android:text="Login"
-            android:layout_margin="5dp"
             tools:ignore="onClick" />
 
         <Button
             android:id="@+id/BackHome"
-            android:text="Cancel"
-            android:layout_margin="5dp"
             android:layout_width="120dp"
+            android:layout_margin="5dp"
+            android:text="Cancel"
 
             />
 
