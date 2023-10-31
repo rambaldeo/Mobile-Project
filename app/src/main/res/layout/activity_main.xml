@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0BEBF"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/welcomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:text="AutoGram" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/credentialContainer"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/username"
+                android:hint="Enter your username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/passwordInput"
+            android:background="@android:color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/password"
+                android:hint="Description"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:columnCount="2">
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="120dp"
+            android:onClick="this"
+            android:text="Login"
+            android:layout_margin="5dp"
+            tools:ignore="onClick" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/BackHome"
+            android:text="Cancel"
+            android:layout_margin="5dp"
+            android:layout_width="120dp"
+
+            />
+
+    </GridLayout>
+</FrameLayout>
