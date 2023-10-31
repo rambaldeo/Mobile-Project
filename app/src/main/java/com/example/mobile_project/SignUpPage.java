@@ -26,7 +26,11 @@ public class SignUpPage extends AppCompatActivity {
             }
         });
 
-        //Once the user creates an account, they should be taken to a new page to edit their profile
+        /*Once the user creates an account, they should be taken to a new page to edit their profile
+        * Such as add a profile name that can be different from their first name
+        * and also add a profile pic for the user
+        * */
+
 
 
     }
